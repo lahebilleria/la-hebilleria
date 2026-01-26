@@ -1,14 +1,164 @@
 ---
 import BaseHead from "@/components/BaseHead.astro";
 import Footer from "@/components/global/Footer.astro";
+import "@/styles/global.css";
+import ReactLayout from "../layouts/ReactLayout.jsx";
+import Hero from "../components/landing/Hero.astro";
+import WholesaleBadge from "../components/landing/Wholesalebadge";
 ---
 
-<html lang="en">
+<html lang="es">
   <head>
     <BaseHead />
+
+      <!-- Google Tag Manager -->
+      <script is:inline>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5ZNBZGL6');
+      </script>
+      <!-- End Google Tag Manager -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "La Hebillería",
+  "url": "https://www.lahebilleria.com",
+  "description": "Proveedor mayorista de bijouterie y accesorios para comercios. Venta por mayor de colitas, vinchas, hebillas, broches y artículos infantiles con envíos a todo el país.",
+  "brand": {
+    "@type": "Brand",
+    "name": "La Hebillería"
+  },
+  "image": "https://www.lahebilleria.com/og-image.jpg",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Argentina"
+  },
+  "audience": {
+    "@type": "BusinessAudience",
+    "name": "Comercios y revendedores"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Ventas mayoristas",
+    "telephone": "+549XXXXXXXXXX",
+    "availableLanguage": ["Spanish"]
+  },
+  "sameAs": [
+    "https://wa.me/549XXXXXXXXXX"
+  ],
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Catálogo mayorista de bijouterie",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Colitas para el cabello"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Vinchas y accesorios"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Hebillas y broches"
+        }
+      }
+    ]
+  }
+}
+</script>
+
   </head>
-  <body class="bg-white max-w-6xl mx-auto px-8 lg:px-12 flex flex-col">
-    <main class="grow"><slot /></main>
-    <Footer />
+  <body class="bg-white max-w-6xl mx-auto px-8 lg:px-12 flex flex-col relative">
+          <!-- Google Tag Manager (noscript) -->
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5ZNBZGL6"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden">
+        </iframe>
+      </noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+    <header role="banner">
+    <!-- Header mobile: logo + badges alineados horizontalmente -->
+    <header class="lg:hidden flex justify-between items-start pt-4 pb-6 z-50">
+      <!-- Logo -->
+      <a href="/">
+        <img
+          src="/logo2.png"
+          alt="Logo de La Hebilleria"
+          class="w-20 h-auto drop-shadow-lg"
+        />
+      </a>
+      
+      <!-- Badges mobile (sacados de WholesaleBadge) -->
+      <div class="flex flex-col items-end gap-2">
+        <div class="bg-yellow-400 text-black font-extrabold uppercase rounded-lg px-3 py-1 text-xs shadow-md tracking-wide">
+          Sólo Venta por Mayor
+        </div>
+        <div class="bg-yellow-400 text-black font-semibold uppercase rounded-lg px-2 py-[2px] text-[10px] shadow-sm tracking-wide">
+          Compra mínima $20.000
+        </div>
+      </div>
+    </header>
+    </header>
+
+    <!-- Logo desktop: fixed en esquina superior izquierda -->
+    <div class="hidden lg:block fixed top-4 left-4 z-50">
+      <a href="/">
+        <img
+          src="/logo2.png"
+          alt="Logo de La Hebilleria"
+          class="w-28 lg:w-32 h-auto drop-shadow-lg"
+        />
+      </a>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="grow">
+      <!-- Badges desktop (fixed lateral) -->
+      <div class="hidden lg:block">
+        <WholesaleBadge />
+      </div>
+      
+      <Hero />
+      
+      <!-- React Layout -->
+      <ReactLayout client:load />
+    </main>
+
+    <footer role="contentinfo">
+      <Footer />
+    </footer>
+
+    <!-- WhatsApp -->
+    
+      <a href="https://wa.me/549XXXXXXXXXX"
+      class="fixed z-50 bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg animate-bounce"
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp para compras mayoristas"
+      title="Comprar bijouterie por mayor vía WhatsApp">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        class="w-9 h-9"
+      />
+    </a>
   </body>
 </html>

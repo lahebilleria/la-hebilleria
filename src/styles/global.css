@@ -1,5 +1,9 @@
 @import "tailwindcss";
-@theme {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
 
   /* base  */
  --color-base-50: oklch(97.3% 0.005 145.13);
@@ -47,3 +51,47 @@
     font-family: InterVariable, sans-serif;
   }
 }
+
+.font-hero {
+  font-family: 'Bangers', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+
+/* Fondo general vibrante */
+body {
+  @apply bg-gradient-to-b from-white to-yellow-50;
+}
+
+/* Secciones destacadas con bordes gruesos y sombras */
+section {
+  @apply rounded-3xl border-4 border-orange-300 shadow-2xl mb-16 p-6;
+}
+
+/* Títulos con efecto de pulso */
+h2 {
+  @apply uppercase tracking-wider text-4xl font-extrabold text-orange-600 animate-pulse mb-8; 
+    /* 👇 Tamaño responsive */
+  font-size: clamp(2.0rem, 5vw, 2.25rem);
+}
+
+/* Botones con efecto hover llamativo */
+button, a {
+  @apply hover:scale-105 transition-transform;
+}
+
+/* Precios con efecto bounce para destacar */
+.price {
+  @apply text-green-600 font-extrabold animate-bounce;
+}
+
+/* Scroll suave para anclas */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset para anclas (compensa el header) */
+section[id] {
+  scroll-margin-top: 2rem;
+}
+

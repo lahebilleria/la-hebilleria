@@ -1,76 +1,105 @@
 ---
 import '../styles/global.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+}
+
+const {
+  title = "La Hebilleria - Bijouterie y Artículos de Temporada a Precios Mayoristas",
+  description = "La Hebilleria: venta de bijouterie y artículos de temporada a precios mayoristas. ¡Combos irresistibles, atención personalizada y envíos a todo el país!",
+  canonical = "https://www.lahebilleria.com/"
+} = Astro.props;
+
 ---
+
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Basic Meta Tags -->
-<title>Your Website Title</title>
+<!-- Title & Description -->
+<title>La Hebilleria - Bijouterie y Artículos de Temporada a Precios Mayoristas</title>
 <meta
   name="description"
-  content="A brief description of your website content."
+  content="La Hebilleria: venta de bijouterie y artículos de temporada a precios mayoristas. ¡Combos irresistibles, atención personalizada y envíos a todo el país!"
 />
-<meta name="keywords" content="keyword1, keyword2, keyword3" />
-<meta name="author" content="Your Name or Company Name" />
+
+<!-- SEO Keywords -->
+<meta name="keywords" content="bijouterie, accesorios, mayorista, La Hebilleria, hebillas pelo, ofertas, combos, moda, comerciantes" />
+<meta name="author" content="La Hebilleria" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://www.lahebilleria.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.lahebilleria.com/" />
+<meta property="og:title" content="La Hebilleria - Bijouterie y Artículos de Temporada a Precios Mayoristas" />
+<meta
+  property="og:description"
+  content="Bijouterie y artículos de temporada con precios mayoristas. ¡Ideales para comerciantes, kioscos y revendedores!"
+/>
+<meta property="og:image" content="https://www.lahebilleria.com/logo.png" />
+
+
+<!-- Tipografía principal -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+  rel="stylesheet"
+/>
+
 
 <!-- Favicons -->
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" href="/icon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/manifest.webmanifest" />
 
-<!-- Favicon for IE -->
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-
-<!-- Favicons for different sizes -->
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.yourwebsite.com/" />
-<meta property="og:title" content="Your Website Title" />
-<meta
-  property="og:description"
-  content="A brief description of your website content."
-/>
-<meta
-  property="og:image"
-  content="https://www.yourwebsite.com/path/to/image.jpg"
-/>
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://www.yourwebsite.com/" />
-<meta property="twitter:title" content="Your Website Title" />
-<meta
-  property="twitter:description"
-  content="A brief description of your website content."
-/>
-<meta
-  property="twitter:image"
-  content="https://www.yourwebsite.com/path/to/image.jpg"
-/>
-
-<!-- Canonical URL -->
-<link rel="canonical" href="https://www.yourwebsite.com/" />
-
-<!-- Additional SEO -->
+<!-- SEO Robots -->
 <meta name="robots" content="index, follow" />
-<meta name="googlebot" content="index, follow" />
 
-<!-- Apple Touch Icon (already included in favicons, but keeping for backwards compatibility) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<!-- Theme Color -->
+<meta name="theme-color" content="#ff9900" />
 
-<!-- Theme Color for Mobile Browsers -->
-<meta name="theme-color" content="#3E433E" />
-
-<!-- For IE -->
+<!-- IE Compatibility -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "La Hebilleria",
+  "url": "https://www.lahebilleria.com.ar",
+  "logo": "https://www.lahebilleria.com.ar/logo2.png",
+  "description": "Venta mayorista de bijouterie y artículos de temporada para comercios en todo el país.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Ventas mayoristas",
+    "telephone": "+54-9-XXXXXXXXXX",
+    "areaServed": "AR",
+    "availableLanguage": "es"
+  },
+  "sameAs": [
+    "https://wa.me/549XXXXXXXXXX"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "La Hebilleria",
+  "url": "https://www.lahebilleria.com.ar",
+  "potentialAction": {
+    "@type": "ContactAction",
+    "target": "https://wa.me/549XXXXXXXXXX",
+    "name": "Contactar por WhatsApp para compra mayorista"
+  }
+}
+</script>
 
 
-<!-- HTML in your document's head -->
-<link rel="preconnect" href="https://rsms.me/" />
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
