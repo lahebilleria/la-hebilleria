@@ -7,7 +7,7 @@ export default function ProductSection({ title, products, id }) {
   return (
     <section id={id} className="py-12">
       <h2 className="text-2xl font-bold mb-4 px-6">{title}</h2>
-      <div className="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 py-12 px-4">
         {products.map((product, i) => (
           <figure
             key={i}
@@ -15,19 +15,46 @@ export default function ProductSection({ title, products, id }) {
               console.log("🧩 Producto clickeado:", product);
               setSelectedProduct(product);
             }}
-            className="relative cursor-pointer"
+            className="relative cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col"
           >
-            <img
-              src={product.image.src}
-              alt={product.title}
-              className="w-full rounded-3xl shadow aspect-12/9 object-contain object-center"
-            />
-            <div className="mt-2 flex justify-between px-6">
-              <div>
-                <h3 className="text-base font-semibold text-base-900">{product.title}</h3>
-                <p className="mt-0.5 text-sm text-base-500">{product.subtitle}</p>
-              </div>
-              <p className="text-lg font-semibold text-orange-600">{product.price}</p>
+            {/* Imagen */}
+            <div className="w-full bg-gray-50">
+              <img
+                src={product.image.src}
+                alt={product.title}
+                loading="lazy"
+                className="w-full h-64 object-contain p-4"
+              />
+            </div>
+
+            {/* Info del producto */}
+            <div className="px-5 pt-2 pb-5 space-y-1 flex flex-col flex-grow">
+              {/* Título */}
+              <h3 className="text-lg font-bold text-gray-900 leading-tight line-clamp-2 h-11">
+                {product.title}
+              </h3>
+
+              {/* Spacer para empujar el resto al fondo */}
+              <div className="flex-grow"></div>
+
+              {/* Viene en */}
+              {product.presentation && (
+                <p className="text-sm text-gray-700">
+                  <span className="font-bold">Viene en:</span> {product.presentation}
+                </p>
+              )}
+
+              {/* Compra mínima */}
+              {product.minOrder && (
+                <p className="text-sm text-gray-700">
+                  <span className="font-bold">Compra mínima:</span> {product.minOrder}
+                </p>
+              )}
+
+              {/* Precio */}
+              <p className="text-lg font-bold text-orange-600 pt-2">
+                Precio: {product.price}
+              </p>
             </div>
           </figure>
         ))}

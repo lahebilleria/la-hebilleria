@@ -1,8 +1,8 @@
 // src/components/landing/Offers.jsx
 import { useCart } from "../cart/CartContext";
 import p1 from "@/images/Combo Plastico.webp";
-import p2 from "@/images/placeholder.png";
-import p3 from "@/images/placeholder.png";
+import p2 from "@/images/Combo Escolar.webp";
+import p3 from "@/images/Combo Otoñal.webp";
 
 const ofertasDestacadas = [
   { 
@@ -14,18 +14,18 @@ const ofertasDestacadas = [
     image: p1 
   },
   { 
-    title: "Colitas Premium", 
+    title: "Mix Escolar", 
     subtitle: "Edición limitada", 
-    price: "$65",
-    originalPrice: "$79", 
+    price: "$15000",
+    originalPrice: "$18000", 
     discount: "20% OFF",
     image: p2 
   },
   { 
-    title: "Set Inicio Escolar", 
+    title: "Combo Otoñal", 
     subtitle: "Pack completo", 
-    price: "$200",
-    originalPrice: "$250", 
+    price: "$20000",
+    originalPrice: "$24000", 
     discount: "20% OFF",
     image: p3 
   },

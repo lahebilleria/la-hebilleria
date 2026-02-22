@@ -47,8 +47,8 @@ export default function ProductDrawer() {
 
   if (!selectedProduct) return null;
 
-  const { title, subtitle, price, image } = selectedProduct;
-  const unitPrice = parseFloat(price.replace("$", ""));
+  const { title, subtitle, presentation, price, minOrder, image } = selectedProduct;
+  const unitPrice = parseFloat(price.replace("$", "").replace(/,/g, ""));
   const total = unitPrice * quantity;
 
   return (
@@ -77,7 +77,7 @@ export default function ProductDrawer() {
       <div className="flex-1 overflow-y-auto p-6 pt-14 pb-4">
         <div className="flex flex-col gap-4 md:gap-6 max-w-sm mx-auto h-full">
           
-          {/* 👇 IMAGEN EXPANDIBLE CON TRANSICIÓN SUAVE */}
+          {/* Imagen expandible */}
           <div className="w-full flex-shrink-0 relative">
             <img
               src={image.src}
@@ -90,7 +90,6 @@ export default function ProductDrawer() {
               }`}
             />
             
-            {/* Overlay con fade suave */}
             {isImageExpanded && (
               <>
                 <div 
@@ -99,7 +98,6 @@ export default function ProductDrawer() {
                   onClick={() => setIsImageExpanded(false)}
                 />
                 
-                {/* Botón X con fade */}
                 <button
                   onClick={() => setIsImageExpanded(false)}
                   className="fixed top-20 right-8 z-50 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-110"
@@ -117,7 +115,6 @@ export default function ProductDrawer() {
                   </svg>
                 </button>
                 
-                {/* Texto con fade */}
                 <p className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 text-white text-sm bg-black bg-opacity-60 px-4 py-2 rounded-full transition-opacity duration-700">
                   Click para cerrar
                 </p>
@@ -125,16 +122,39 @@ export default function ProductDrawer() {
             )}
           </div>
 
-          <div>
-            <h3 className="text-sm text-gray-600">{title}</h3>
-            <p className="text-xl font-semibold text-orange-600">{subtitle}</p>
-            <p className="text-lg font-bold text-orange-600 mt-2">
+          {/* Info del producto */}
+          <div className="space-y-3">
+            <h3 className="text-xl font-bold text-gray-900">{title}</h3>
+            
+            {/* Código del producto */}
+            <div className="bg-gray-100 rounded-lg px-3 py-2">
+              <p className="text-sm text-gray-600">
+                <span className="font-semibold">Código:</span> {subtitle}
+              </p>
+            </div>
+
+            {/* Presentación */}
+            {presentation && (
+              <p className="text-sm text-gray-600">
+                <span className="font-semibold">Viene en:</span> {presentation}
+              </p>
+            )}
+
+            {/* Compra mínima */}
+            {minOrder && (
+              <p className="text-sm text-gray-600">
+                <span className="font-semibold">Compra mínima:</span> {minOrder}
+              </p>
+            )}
+
+            {/* Precio unitario */}
+            <p className="text-lg font-bold text-orange-600">
               Precio: {price}
             </p>
           </div>
 
           {/* Selector de cantidad */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 pt-2">
             <span className="text-sm font-medium">Cantidad:</span>
             <button
               className="px-3 py-1 text-lg bg-gray-200 hover:bg-gray-300 rounded transition"
@@ -152,9 +172,9 @@ export default function ProductDrawer() {
           </div>
 
           {/* Precio total */}
-          <div>
-            <p className="text-sm text-gray-500">Total:</p>
-            <p className="text-xl font-semibold text-green-700">${total.toFixed(2)}</p>
+          <div className="bg-green-50 rounded-lg p-4">
+            <p className="text-sm text-gray-600">Total:</p>
+            <p className="text-2xl font-bold text-green-700">${total.toLocaleString('es-AR')}</p>
           </div>
         </div>
       </div>

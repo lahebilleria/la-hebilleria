@@ -6,21 +6,30 @@ import CheckoutDrawer from "../components/cart/CheckoutDrawer.jsx";
 import CartFloatingButton from "../components/cart/CartFloatingButton.jsx";
 import ProductSection from "../components/landing/ProductSection.jsx";
 import Offers from "../components/landing/Offers.jsx";
-import ExhibidoresSection from "../components/landing/ExhibidoresSection.jsx"; // 👈 NUEVO
 
-
-// Importar categorías individuales
-import { artesanal, broches, colitas, hebillas, irrompibles, vinchas } from "../data/products.js";
+// 👇 IMPORTAR NUEVAS CATEGORÍAS
+import { 
+  artesanal, 
+  irrompibles, 
+  colitaslycra, 
+  brochesplastico, 
+  colitasinfantil, 
+  vinchasinfantil, 
+  hebillas, 
+  setinfantil 
+} from "../data/products.js";
 
 export default function ReactLayout({ children = null }) {
-  // 👇 ORDEN MANUAL DE CATEGORÍAS
+  // 👇 NUEVO ORDEN CON NOMBRES ACTUALIZADOS
   const categories = [
     { name: "Artesanal", id: "artesanal", products: artesanal },
-    { name: "Broches", id: "broches", products: broches },
-    { name: "Colitas", id: "colitas", products: colitas },
+    { name: "Colitas Lycra", id: "colitaslycra", products: colitaslycra },
+    { name: "Colitas Infantil", id: "colitasinfantil", products: colitasinfantil },
+    { name: "Vinchas Infantil", id: "vinchasinfantil", products: vinchasinfantil },
     { name: "Hebillas", id: "hebillas", products: hebillas },
+    { name: "Broches Plástico", id: "brochesplastico", products: brochesplastico },
+    { name: "Set Infantil", id: "setinfantil", products: setinfantil },
     { name: "Irrompibles", id: "irrompibles", products: irrompibles },
-    { name: "Vinchas", id: "vinchas", products: vinchas },
   ];
 
   return (
@@ -41,10 +50,6 @@ export default function ReactLayout({ children = null }) {
       
       {/* Ofertas (siempre después de la primera categoría) */}
       <Offers />
-
-      {/* 👇 NUEVA SECCIÓN DE EXHIBIDORES */}
-      {/* <ExhibidoresSection />*/}
-
       
       {/* Resto de categorías */}
       {categories.slice(1).map(category => (
