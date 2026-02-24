@@ -1,5 +1,5 @@
 // 🤖 Archivo generado automáticamente - NO EDITAR MANUALMENTE
-// Última actualización: 22/2/2026, 10:36:08
+// Última actualización: 24/2/2026, 10:51:25
 
 export const artesanal = [
   {
@@ -33,7 +33,7 @@ export const artesanal = [
     }
   },
   {
-    "title": "Colita Con Moño Mediano Estam.",
+    "title": "Colita Con Moño Mediano Estampado",
     "subtitle": "AC1153",
     "presentation": "Blister X 6 Unidades",
     "price": "$3800",
@@ -156,7 +156,7 @@ export const irrompibles = [
     }
   },
   {
-    "title": "Vincha Plana Paq X 6 Unidades",
+    "title": "Vincha Colores Lisos",
     "subtitle": "IV1225",
     "presentation": "Paquete X 6 Unidades",
     "price": "$1800",
@@ -332,16 +332,6 @@ export const brochesplastico = [
     }
   },
   {
-    "title": "Broche Mediano Osito",
-    "subtitle": "BP1424",
-    "presentation": "Blister Individual",
-    "price": "$1875",
-    "minOrder": "6 Blisters",
-    "image": {
-      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769228313/Broche_Ositos_kvxt5k.webp"
-    }
-  },
-  {
     "title": "Broche Infantil Capibara",
     "subtitle": "BP1425",
     "presentation": "Blister X 10 Unidades",
@@ -352,7 +342,7 @@ export const brochesplastico = [
     }
   },
   {
-    "title": "Broche Infantil Capibara",
+    "title": "Broche Infantil Personajes",
     "subtitle": "BP1426",
     "presentation": "Blister X 10 Unidades",
     "price": "$5600",
@@ -372,13 +362,13 @@ export const brochesplastico = [
     }
   },
   {
-    "title": "Broche Chico Personajes",
+    "title": "Broche Infantil Stich Grande",
     "subtitle": "BP1428",
     "presentation": "Blister X 10 Unidades",
     "price": "$5600",
     "minOrder": "1 Blister",
     "image": {
-      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771717982/Bp1428_i9rt5r.jpg"
+      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771925899/stitch_oh555b.webp"
     }
   },
   {
@@ -565,20 +555,20 @@ export const colitasinfantil = [
     }
   },
   {
-    "title": "Terminal De Trenza Paq X 12",
+    "title": "Terminal De Trenza",
     "subtitle": "Tt1634",
-    "presentation": "Blister Individual",
+    "presentation": "Paquete Individual",
     "price": "$1800",
     "minOrder": "1 Paquete",
     "image": {
-      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771137073/Ci1630_fh7qky.webp"
+      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771924659/Tt1634_rusolu.webp"
     }
   }
 ];
 
 export const vinchasinfantil = [
   {
-    "title": "Vincha Elastizada C Adorno Bb",
+    "title": "Vincha Elastizada Con Adorno Bb",
     "subtitle": "Vi1720",
     "presentation": "Blister Individual",
     "price": "$1300",
@@ -791,7 +781,7 @@ export const hebillas = [
     }
   },
   {
-    "title": "Invisible Abanico Carton X 48",
+    "title": "Invisible Abanico Carton",
     "subtitle": "Ic1829",
     "presentation": "Carton individual",
     "price": "$590",
@@ -801,20 +791,20 @@ export const hebillas = [
     }
   },
   {
-    "title": "Invisible Largo Negro Carton X 49",
+    "title": "Invisible Largo Negro Carton",
     "subtitle": "Ic1830",
     "presentation": "Carton individual",
     "price": "$900",
     "minOrder": "6 Cartones",
     "image": {
-      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771137068/Pa1827_n3ccor.webp"
+      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771924660/Ic1830_qoxw4h.webp"
     }
   }
 ];
 
 export const setinfantil = [
   {
-    "title": "Set Infantil Stitch",
+    "title": "Set Infantil Personajes",
     "subtitle": "Si1920",
     "presentation": "Blister Mix",
     "price": "$1300",
@@ -855,16 +845,6 @@ export const setinfantil = [
   },
   {
     "title": "Set Infantil Picos",
-    "subtitle": "Si1924",
-    "presentation": "Blister Mix",
-    "price": "$1300",
-    "minOrder": "6 Blisterss",
-    "image": {
-      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770885211/1924_avxg9l.webp"
-    }
-  },
-  {
-    "title": "Set Infantil Picos",
     "subtitle": "Si1925",
     "presentation": "Blister Mix",
     "price": "$1300",
@@ -881,16 +861,6 @@ export const setinfantil = [
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770885212/1926_prqsob.webp"
-    }
-  },
-  {
-    "title": "Set Infanti Kuromi",
-    "subtitle": "Si1927",
-    "presentation": "Blister Mix",
-    "price": "$1600",
-    "minOrder": "6 Blisterss",
-    "image": {
-      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771740426/Si1927_cvipfc.webp"
     }
   }
 ];
