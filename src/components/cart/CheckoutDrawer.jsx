@@ -27,6 +27,43 @@ export default function CheckoutDrawer() {
       return;
     }
 
+  // Preparar items para ambos eventos
+  const items = cartItems.map(item => ({
+    item_id: item.subtitle,           // Código: AC1150
+    item_name: item.title,            // Nombre del producto
+    price: parseFloat(item.price.replace("$", "").replace(/,/g, "")),
+    quantity: item.quantity,
+    item_category: item.category || 'Ofertas Especiales'  // 
+  }));
+
+  const orderValue = parseFloat(totalPrice.toFixed(2));
+
+  if (typeof window !== 'undefined' && window.dataLayer) {
+    // 👇 EVENTO 1: Enhanced Ecommerce Purchase (para GA4)
+    window.dataLayer.push({ ecommerce: null }); // Limpiar ecommerce object
+    window.dataLayer.push({
+      event: 'purchase',
+      ecommerce: {
+        transaction_id: `WA-${Date.now()}`,   // ID único de transacción
+        value: orderValue,
+        currency: 'ARS',
+        tax: 0,
+        shipping: 0,
+        items: items
+      }
+    });
+
+    // 👇 EVENTO 2: Conversión custom para Google Ads
+    window.dataLayer.push({
+      event: 'whatsapp_order',
+      event_category: 'conversion',
+      event_label: 'checkout_complete',
+      value: orderValue,
+      currency: 'ARS',
+      transaction_id: `WA-${Date.now()}`,
+      items: items
+    });
+  }
       let mensaje = `Hola, quiero consultar por compra mayorista:\n\n`;
       mensaje += `━━━━━━━━━━━━━━━━━━\n`;
       mensaje += `📦 *DETALLE DEL PEDIDO:*\n\n`;
@@ -52,7 +89,7 @@ export default function CheckoutDrawer() {
       }
 
       const mensajeCodificado = encodeURIComponent(mensaje);
-      const numeroWhatsApp = "5491166684821";
+      const numeroWhatsApp = "5491168197021";
       
       window.open(`https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`, "_blank");
     };

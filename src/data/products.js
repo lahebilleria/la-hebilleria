@@ -1,5 +1,5 @@
 // 🤖 Archivo generado automáticamente - NO EDITAR MANUALMENTE
-// Última actualización: 24/2/2026, 10:51:25
+// Última actualización: 26/2/2026, 09:00:51
 
 export const artesanal = [
   {
@@ -35,7 +35,7 @@ export const artesanal = [
   {
     "title": "Colita Con Moño Mediano Estampado",
     "subtitle": "AC1153",
-    "presentation": "Blister X 6 Unidades",
+    "presentation": "Blister X 3 Unidades",
     "price": "$3800",
     "minOrder": "1 Blister",
     "image": {
@@ -362,11 +362,11 @@ export const brochesplastico = [
     }
   },
   {
-    "title": "Broche Infantil Stich Grande",
+    "title": "Broche Infantil Stitch Grande",
     "subtitle": "BP1428",
-    "presentation": "Blister X 10 Unidades",
-    "price": "$5600",
-    "minOrder": "1 Blister",
+    "presentation": "Paquete X 6 Unidades",
+    "price": "$8900",
+    "minOrder": "1 Paquete",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771925899/stitch_oh555b.webp"
     }

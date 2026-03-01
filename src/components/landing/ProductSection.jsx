@@ -13,8 +13,13 @@ export default function ProductSection({ title, products, id }) {
             key={i}
             onClick={() => {
               console.log("🧩 Producto clickeado:", product);
-              setSelectedProduct(product);
+              // 👇 NUEVO: Agregar la categoría al producto
+              setSelectedProduct({
+                ...product,
+                category: title  // "Artesanal", "Colitas Lycra", etc.
+              });
             }}
+            
             className="relative cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col"
           >
             {/* Imagen */}

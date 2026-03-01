@@ -1,0 +1,162 @@
+# La Hebillería - Proveedor Mayorista de Bijouterie y Accesorios
+
+> Sitio web: https://lahebilleria.com.ar
+> Última actualización: Marzo 2026
+
+## Sobre La Hebillería
+
+La Hebillería es un proveedor mayorista argentino especializado en bijouterie y accesorios para el cabello. Ofrecemos productos de calidad para comerciantes y revendedores en todo el país.
+
+## Información del Negocio
+
+- **Tipo de venta**: Solo por mayor (B2B)
+- **Compra mínima**: $20,000 ARS
+- **Moneda**: Pesos argentinos (ARS)
+- **Envíos**: A todo Argentina (costo no incluido, se coordina por WhatsApp)
+- **Método de pedido**: Vía WhatsApp
+- **Facturación**: Disponible
+
+## Categorías de Productos
+
+### 1. Artesanal
+Productos hechos a mano, incluyendo:
+- Colitas con moños (lisos, cuadrillé, estampados)
+- Scrunchis (lisos, estampados, cuadrillé)
+- Vinchas forradas
+
+**Presentación típica**: Blisters o paquetes de 3-6 unidades
+**Rango de precio**: $2,000 - $3,800 por unidad de venta
+
+### 2. Colitas Lycra
+Colitas elastizadas de lycra en diferentes estilos y colores.
+
+**Presentación típica**: Paquetes múltiples
+**Compra mínima**: 1 paquete
+
+### 3. Colitas Infantil
+Línea especial para niñas con diseños coloridos y divertidos.
+
+**Presentación típica**: Sets o blisters
+**Público objetivo**: Comercios con clientela infantil
+
+### 4. Vinchas Infantil
+Vinchas decorativas para niñas en diversos estilos.
+
+**Presentación típica**: Paquetes de 3-12 unidades
+**Rango de precio**: $1,800 - $3,800
+
+### 5. Hebillas
+Variedad de hebillas y tic-tacs:
+- Hebillas decorativas
+- Tic-tacs con moños
+- Hebillas elegantes
+
+**Presentación típica**: Cartones o blisters de 3-12 unidades
+
+### 6. Broches Plástico
+Broches y clips resistentes:
+- Broches pescadito (chico y grande)
+- Broches banana
+- Broches de diferentes tamaños
+
+**Presentación típica**: Paquetes de 6-12 unidades
+**Rango de precio**: $1,400 - $3,500
+
+### 7. Set Infantil
+Conjuntos coordinados de accesorios para niñas.
+
+**Ideal para**: Gift sets, regalos, packs promocionales
+
+### 8. Irrompibles
+Línea de productos duraderos y resistentes:
+- Vinchas plásticas (con dientes, orejitas, planas, zigzag, redondas)
+- Broches resistentes (varios tamaños)
+
+**Característica principal**: Alta durabilidad
+**Presentación típica**: Paquetes de 6-12 unidades
+**Rango de precio**: $1,600 - $3,500
+
+## Estructura de Precios
+
+- **Precio unitario**: Se refiere al precio de cada paquete/blister/cartón (NO por pieza individual)
+- **Ejemplo**: "Blister X 6 Unidades - $3,800" significa que el blister completo con 6 piezas cuesta $3,800
+- **Compra mínima por producto**: Generalmente 1 blister/paquete/cartón
+
+## Flujo de Compra
+
+1. **Navegación**: El cliente explora productos por categoría en lahebilleria.com.ar
+2. **Selección**: Click en producto para ver detalles (código, presentación, precio)
+3. **Carrito**: Agregar productos con cantidades deseadas
+4. **Checkout**: Completar datos (nombre, dirección, aclaraciones opcionales)
+5. **Pedido por WhatsApp**: El sistema genera un mensaje estructurado con:
+   - Detalle completo de productos con códigos
+   - Subtotal del pedido
+   - Datos del cliente
+6. **Coordinación**: El equipo de La Hebillería responde vía WhatsApp para confirmar stock, coordinar envío y facturación
+
+## Códigos de Producto
+
+Los productos usan un sistema de códigos alfanuméricos:
+- **Formato**: [Letra de categoría][Letra de tipo][Número de 4 dígitos]
+- **Ejemplos**:
+  - `AC1150`: Artesanal Colita 1150
+  - `IB1220`: Irrompible Broche 1220
+  - `AS1154`: Artesanal Scrunchi 1154
+
+**Importancia**: Los códigos son esenciales para la identificación exacta del producto en el pedido.
+
+## Información de Contacto
+
+- **WhatsApp**: Disponible mediante botón flotante en el sitio
+- **Horario estimado**: Lunes a viernes, 9:00-18:00 (horario argentino)
+
+## Público Objetivo
+
+- Comercios minoristas de accesorios
+- Revendedores
+- Tiendas de regalos
+- Bazares
+- Emprendedores
+- Locales de ropa infantil
+
+## Ventajas Competitivas
+
+- Variedad amplia de productos
+- Stock permanente
+- Productos artesanales y de fabricación
+- Atención personalizada vía WhatsApp
+- Envíos a todo el país
+- Precios mayoristas competitivos
+
+## Políticas Importantes
+
+1. **Solo venta mayorista**: No se realizan ventas minoristas
+2. **Compra mínima obligatoria**: $20,000 ARS
+3. **Stock sujeto a disponibilidad**: Confirmar disponibilidad al momento del pedido
+4. **Envío no incluido**: Se cotiza según destino y cantidad
+5. **Sin compras online directas**: Todos los pedidos se coordinan por WhatsApp
+
+## Tecnología del Sitio
+
+- **Framework**: Astro + React
+- **Datos de productos**: Importados desde Google Sheets
+- **Actualizaciones**: Los productos se actualizan mediante script automático
+- **Hosting**: Vercel
+- **Analytics**: Google Tag Manager + GA4
+- **Tracking**: Enhanced Ecommerce implementado
+
+## SEO y Marketing
+
+- **Keywords principales**: bijouterie mayorista, accesorios por mayor, colitas mayorista, vinchas por mayor
+- **Ubicación**: Argentina
+- **Mercado**: B2B (Business to Business)
+- **Conversión principal**: Pedidos vía WhatsApp
+
+## Notas Técnicas para LLMs
+
+- Los precios mostrados son por unidad de venta (paquete/blister/cartón), no por pieza individual
+- La columna "PRESENTACION" indica el formato de venta (ej: "Blister X 6 Unidades")
+- La columna "MINIMO DE COMPRA" indica cuántas unidades de venta mínimas se requieren
+- Los productos sin estado "Activo" en la base de datos no se muestran en el sitio
+- El sitio NO procesa pagos online, solo genera pedidos para WhatsApp
+- Los códigos de producto son críticos para identificación en el inventario
