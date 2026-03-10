@@ -1,5 +1,5 @@
 // 🤖 Archivo generado automáticamente - NO EDITAR MANUALMENTE
-// Última actualización: 26/2/2026, 09:00:51
+// Última actualización: 8/3/2026, 06:12:57
 
 export const artesanal = [
   {
@@ -665,6 +665,16 @@ export const vinchasinfantil = [
     "minOrder": "6 Unidades",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771718034/Vi1729_dkvsxx.jpg"
+    }
+  },
+  {
+    "title": "Vincha Lycra Angosta Colegial",
+    "subtitle": "Vi1730",
+    "presentation": "Blister",
+    "price": "$1300",
+    "minOrder": "6 Unidades",
+    "image": {
+      "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1772945993/vincha-angosta.webp"
     }
   }
 ];

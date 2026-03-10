@@ -1,6 +1,6 @@
 // src/components/cart/CheckoutDrawer.jsx
 import { useCart } from "./CartContext";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 export default function CheckoutDrawer() {
   const { cartItems, isCheckoutOpen, closeCheckout } = useCart();
@@ -15,8 +15,33 @@ export default function CheckoutDrawer() {
     0
   );
 
-  if (!isCheckoutOpen) return null;
+  
+  // 👇 NUEVO: begin_checkout cuando se abre el drawer
+  useEffect(() => {
+    if (isCheckoutOpen && cartItems.length > 0 && typeof window !== 'undefined' && window.dataLayer) {
+      const items = cartItems.map(item => ({
+        item_id: item.subtitle,
+        item_name: item.title,
+        item_category: item.category || 'Sin categoría',
+        price: parseFloat(item.price.replace("$", "").replace(/,/g, "")),
+        quantity: item.quantity
+      }));
 
+      const totalValue = parseFloat(totalPrice.toFixed(2));
+
+      window.dataLayer.push({ ecommerce: null });
+      window.dataLayer.push({
+        event: 'begin_checkout',
+        ecommerce: {
+          value: totalValue,
+          currency: 'ARS',
+          items: items
+        }
+      });
+    }
+  }, [isCheckoutOpen]); // Se dispara cuando cambia isCheckoutOpen
+
+  if (!isCheckoutOpen) return null;
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };

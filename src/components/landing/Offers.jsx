@@ -8,25 +8,25 @@ const ofertasDestacadas = [
   { 
     title: "Plástico Irrompible", 
     subtitle: "Combo Variado", 
-    price: "$21000",
-    originalPrice: "$25000", 
-    discount: "15% OFF",
+    price: "$22000",
+    originalPrice: "$24800", 
+    discount: "10% OFF",
     image: p1 
   },
   { 
     title: "Mix Escolar", 
     subtitle: "Edición limitada", 
-    price: "$15000",
-    originalPrice: "$18000", 
-    discount: "20% OFF",
+    price: "$17000",
+    originalPrice: "$19400", 
+    discount: "10% OFF",
     image: p2 
   },
   { 
     title: "Combo Otoñal", 
     subtitle: "Pack completo", 
-    price: "$20000",
-    originalPrice: "$24000", 
-    discount: "20% OFF",
+    price: "$22000",
+    originalPrice: "$24800", 
+    discount: "10% OFF",
     image: p3 
   },
 ];

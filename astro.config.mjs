@@ -8,7 +8,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   // Add your domain here
-   site: 'https://lahebilleria.com',
+   site: 'https://lahebilleria.com.ar',
   integrations: [sitemap(), react()],
   devToolbar: {
     enabled: false

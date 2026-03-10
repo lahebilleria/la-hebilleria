@@ -4,59 +4,49 @@ import '../styles/global.css';
 export interface Props {
   title?: string;
   description?: string;
-  canonical?: string;
 }
 
 const {
-  title = "La Hebilleria - Bijouterie y Artículos de Temporada a Precios Mayoristas",
-  description = "La Hebilleria: venta de bijouterie y artículos de temporada a precios mayoristas. ¡Combos irresistibles, atención personalizada y envíos a todo el país!",
-  canonical = "https://www.lahebilleria.com/"
+  title = "La Hebillería - Proveedor Mayorista de Bijouterie y Accesorios",
+  description = "Proveedor mayorista de bijouterie y accesorios. Colitas, vinchas, hebillas, broches al por mayor. Compra mínima $20.000. Envíos a todo el país."
 } = Astro.props;
 
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const siteURL = Astro.site?.toString() || 'https://lahebilleria.com.ar';
 ---
-
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Title & Description -->
-<title>La Hebilleria - Bijouterie y Artículos de Temporada a Precios Mayoristas</title>
-<meta
-  name="description"
-  content="La Hebilleria: venta de bijouterie y artículos de temporada a precios mayoristas. ¡Combos irresistibles, atención personalizada y envíos a todo el país!"
-/>
+<title>{title}</title>
+<meta name="description" content={description} />
 
 <!-- SEO Keywords -->
-<meta name="keywords" content="bijouterie, accesorios, mayorista, La Hebilleria, hebillas pelo, ofertas, combos, moda, comerciantes" />
-<meta name="author" content="La Hebilleria" />
+<meta name="keywords" content="bijouterie mayorista, accesorios por mayor, colitas mayorista, vinchas por mayor, hebillas mayorista, broches mayorista, argentina, proveedor bijouterie" />
+<meta name="author" content="La Hebillería" />
 
 <!-- Canonical URL -->
-<link rel="canonical" href="https://www.lahebilleria.com/" />
+<link rel="canonical" href={canonicalURL} />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.lahebilleria.com/" />
-<meta property="og:title" content="La Hebilleria - Bijouterie y Artículos de Temporada a Precios Mayoristas" />
-<meta
-  property="og:description"
-  content="Bijouterie y artículos de temporada con precios mayoristas. ¡Ideales para comerciantes, kioscos y revendedores!"
-/>
-<meta property="og:image" content="https://www.lahebilleria.com/logo.png" />
-
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL('/og-image.jpg', siteURL)} />
+<meta property="og:locale" content="es_AR" />
 
 <!-- Tipografía principal -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-  rel="stylesheet"
-/>
-
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
 
 <!-- Favicons -->
-<link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
 
 <!-- SEO Robots -->
 <meta name="robots" content="index, follow" />
@@ -64,42 +54,5 @@ const {
 <!-- Theme Color -->
 <meta name="theme-color" content="#ff9900" />
 
-<!-- IE Compatibility -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "La Hebilleria",
-  "url": "https://www.lahebilleria.com.ar",
-  "logo": "https://www.lahebilleria.com.ar/logo2.png",
-  "description": "Venta mayorista de bijouterie y artículos de temporada para comercios en todo el país.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Ventas mayoristas",
-    "telephone": "+54-9-XXXXXXXXXX",
-    "areaServed": "AR",
-    "availableLanguage": "es"
-  },
-  "sameAs": [
-    "https://wa.me/5491168197021"
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "La Hebilleria",
-  "url": "https://www.lahebilleria.com.ar",
-  "potentialAction": {
-    "@type": "ContactAction",
-    "target": "https://wa.me/5491168197021",
-    "name": "Contactar por WhatsApp para compra mayorista"
-  }
-}
-</script>
-
-
+<!-- Preconnect para performance -->
+<link rel="preconnect" href="https://res.cloudinary.com" />

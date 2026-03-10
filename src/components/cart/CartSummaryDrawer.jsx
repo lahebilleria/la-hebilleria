@@ -6,6 +6,29 @@ export default function CartSummaryDrawer() {
 
   const totalPrice = cartItems.reduce((sum, item) => sum + (parseFloat(item.price.replace("$", "")) * item.quantity), 0);
 
+    // 👇 NUEVO: Función para eliminar con tracking
+  const handleRemove = (item) => {
+    // Track remove_from_cart ANTES de eliminar
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({ ecommerce: null });
+      window.dataLayer.push({
+        event: 'remove_from_cart',
+        ecommerce: {
+          items: [{
+            item_id: item.subtitle,
+            item_name: item.title,
+            item_category: item.category || 'Sin categoría',
+            price: parseFloat(item.price.replace("$", "").replace(/,/g, "")),
+            quantity: item.quantity
+          }]
+        }
+      });
+    }
+
+    // Después del tracking, eliminar del carrito
+    removeFromCart(item.title);
+  };
+
   if (!isSummaryOpen) return null;
 
   return (
@@ -54,7 +77,7 @@ export default function CartSummaryDrawer() {
                   ${(parseFloat(item.price.replace("$", "")) * item.quantity).toFixed(2)}
                 </p>
                 <button
-                  onClick={() => removeFromCart(item.title)}
+                  onClick={() => handleRemove(item)}
                   className="text-xs text-red-500 hover:text-red-700 mt-1"
                 >
                   Eliminar

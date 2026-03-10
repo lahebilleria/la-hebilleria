@@ -16,11 +16,28 @@ export default function ProductDrawer() {
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [isImageExpanded, setIsImageExpanded] = useState(false);
 
-  useEffect(() => {
-    setQuantity(1);
-    setShowConfirmation(false);
-    setIsImageExpanded(false);
-  }, [selectedProduct]);
+useEffect(() => {
+  if (selectedProduct && typeof window !== 'undefined' && window.dataLayer) {
+    // Track cuando se abre el drawer
+    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+      event: 'view_item',
+      ecommerce: {
+        items: [{
+          item_id: selectedProduct.subtitle,
+          item_name: selectedProduct.title,
+          item_category: selectedProduct.category || 'Sin categoría',
+          price: parseFloat(selectedProduct.price.replace("$", "").replace(/,/g, "")),
+          quantity: 1
+        }]
+      }
+    });
+  }
+  
+  setQuantity(1);
+  setShowConfirmation(false);
+  setIsImageExpanded(false);
+}, [selectedProduct]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -36,14 +53,33 @@ export default function ProductDrawer() {
     };
   }, [selectedProduct]);
 
-  const handleAddToCart = () => {
-    addToCart(selectedProduct, quantity);
-    setShowConfirmation(true);
-    setTimeout(() => {
-      setShowConfirmation(false);
-      setSelectedProduct(null);
-    }, 1000);
-  };
+// src/components/cart/ProductDrawer.jsx
+
+const handleAddToCart = () => {
+  // Track add to cart ANTES de agregar
+  if (typeof window !== 'undefined' && window.dataLayer) {
+    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+      event: 'add_to_cart',
+      ecommerce: {
+        items: [{
+          item_id: selectedProduct.subtitle,
+          item_name: selectedProduct.title,
+          item_category: selectedProduct.category || 'Sin categoría',
+          price: parseFloat(selectedProduct.price.replace("$", "").replace(/,/g, "")),
+          quantity: quantity
+        }]
+      }
+    });
+  }
+
+  addToCart(selectedProduct, quantity);
+  setShowConfirmation(true);
+  setTimeout(() => {
+    setShowConfirmation(false);
+    setSelectedProduct(null);
+  }, 1000);
+};
 
   if (!selectedProduct) return null;
 
