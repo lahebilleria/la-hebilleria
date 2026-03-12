@@ -21,66 +21,55 @@ import WholesaleBadge from "../components/landing/Wholesalebadge";
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Schema.org - Store -->
-    <script type="application/ld+json" is:inline>
-    {
-      "@context": "https://schema.org",
-      "@type": "Store",
-      "name": "La Hebillería",
-      "url": "https://lahebilleria.com.ar",
-      "description": "Proveedor mayorista de bijouterie y accesorios para comercios. Venta por mayor de colitas, vinchas, hebillas, broches y artículos infantiles con envíos a todo el país.",
-      "brand": {
-        "@type": "Brand",
-        "name": "La Hebillería"
-      },
-      "image": "https://lahebilleria.com.ar/og-image.jpg",
-      "priceRange": "$$",
-      "areaServed": {
-        "@type": "Country",
-        "name": "Argentina"
-      },
-      "audience": {
-        "@type": "BusinessAudience",
-        "name": "Comercios y revendedores"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Ventas mayoristas",
-        "telephone": "+54-9-11-6819-7021",
-        "availableLanguage": ["Spanish"]
-      },
-      "sameAs": [
-        "https://wa.me/5491168197021"
-      ],
-      "makesOffer": {
-        "@type": "OfferCatalog",
-        "name": "Catálogo mayorista de bijouterie",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Colitas para el cabello"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Vinchas y accesorios"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Hebillas y broches"
-            }
-          }
-        ]
-      }
+    <!-- Schema.org - Store (Corregido y mejorado) -->
+<script type="application/ld+json" is:inline>
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "La Hebillería",
+  "url": "https://lahebilleria.com.ar",
+  "description": "Proveedor mayorista de bijouterie y accesorios para comercios. Venta por mayor de colitas, vinchas, hebillas, broches y artículos infantiles con envíos a todo el país.",
+  "brand": {
+    "@type": "Brand",
+    "name": "La Hebillería"
+  },
+  "image": "https://lahebilleria.com.ar/logo2.png",
+  "priceRange": "$$",
+  "telephone": "+54-9-11-6819-7021",
+  "currenciesAccepted": "ARS",
+  "paymentAccepted": ["Cash", "Bank Transfer"],
+  "areaServed": {
+    "@type": "Country",
+    "name": "Argentina"
+  },
+  "audience": {
+    "@type": "BusinessAudience",
+    "name": "Comercios y revendedores mayoristas"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Ventas mayoristas",
+    "telephone": "+54-9-11-6819-7021",
+    "availableLanguage": ["Spanish"]
+  },
+  "sameAs": [
+    "https://wa.me/5491168197021"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "potentialAction": {
+    "@type": "TradeAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://wa.me/5491168197021"
     }
-    </script>
+  }
+}
+</script>
   </head>
 
   <body class="bg-white max-w-6xl mx-auto px-8 lg:px-12 flex flex-col relative">
