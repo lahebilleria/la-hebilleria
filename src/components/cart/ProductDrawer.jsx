@@ -15,6 +15,9 @@ export default function ProductDrawer() {
   const [quantity, setQuantity] = useState(1);
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [isImageExpanded, setIsImageExpanded] = useState(false);
+  const parsePrice = (priceString) => {
+    return parseInt(priceString.replace(/\D/g, ""));
+    };
 
 useEffect(() => {
   if (selectedProduct && typeof window !== 'undefined' && window.dataLayer) {
@@ -27,7 +30,7 @@ useEffect(() => {
           item_id: selectedProduct.subtitle,
           item_name: selectedProduct.title,
           item_category: selectedProduct.category || 'Sin categoría',
-          price: parseFloat(selectedProduct.price.replace("$", "").replace(/,/g, "")),
+          price: parsePrice(selectedProduct.price),
           quantity: 1
         }]
       }
@@ -66,7 +69,7 @@ const handleAddToCart = () => {
           item_id: selectedProduct.subtitle,
           item_name: selectedProduct.title,
           item_category: selectedProduct.category || 'Sin categoría',
-          price: parseFloat(selectedProduct.price.replace("$", "").replace(/,/g, "")),
+          price: parsePrice(selectedProduct.price),
           quantity: quantity
         }]
       }

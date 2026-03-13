@@ -5,6 +5,9 @@ export default function CartSummaryDrawer() {
   const { cartItems, isSummaryOpen, closeCartSummary, openCheckout, removeFromCart } = useCart();
 
   const totalPrice = cartItems.reduce((sum, item) => sum + (parseFloat(item.price.replace("$", "")) * item.quantity), 0);
+  const parsePrice = (priceString) => {
+  return parseInt(priceString.replace(/\D/g, ""));
+    };
 
     // 👇 NUEVO: Función para eliminar con tracking
   const handleRemove = (item) => {
@@ -18,7 +21,7 @@ export default function CartSummaryDrawer() {
             item_id: item.subtitle,
             item_name: item.title,
             item_category: item.category || 'Sin categoría',
-            price: parseFloat(item.price.replace("$", "").replace(/,/g, "")),
+            price: parsePrice(item.price),
             quantity: item.quantity
           }]
         }

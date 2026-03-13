@@ -15,6 +15,10 @@ export default function CheckoutDrawer() {
     0
   );
 
+  const parsePrice = (priceString) => {
+  return parseInt(priceString.replace(/\D/g, ""));
+    };
+
   
   // 👇 NUEVO: begin_checkout cuando se abre el drawer
   useEffect(() => {
@@ -23,7 +27,7 @@ export default function CheckoutDrawer() {
         item_id: item.subtitle,
         item_name: item.title,
         item_category: item.category || 'Sin categoría',
-        price: parseFloat(item.price.replace("$", "").replace(/,/g, "")),
+        price: parsePrice(item.price),
         quantity: item.quantity
       }));
 
@@ -56,7 +60,7 @@ export default function CheckoutDrawer() {
   const items = cartItems.map(item => ({
     item_id: item.subtitle,           // Código: AC1150
     item_name: item.title,            // Nombre del producto
-    price: parseFloat(item.price.replace("$", "").replace(/,/g, "")),
+    price: parsePrice(item.price),
     quantity: item.quantity,
     item_category: item.category || 'Ofertas Especiales'  // 
   }));
