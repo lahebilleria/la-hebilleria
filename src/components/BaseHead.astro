@@ -7,8 +7,8 @@ export interface Props {
 }
 
 const {
-  title = "La Hebillería - Proveedor Mayorista de Bijouterie y Accesorios",
-  description = "Proveedor mayorista de bijouterie y accesorios. Colitas, vinchas, hebillas, broches al por mayor. Compra mínima $20.000. Envíos a todo el país."
+  title = "La Hebillería - Proveedor Mayorista de Accesorios para el Cabello",
+  description = "Proveedor mayorista de accesorios para el pelo. Colitas, vinchas, hebillas, broches al por mayor. Compra mínima $20.000. Envíos a todo el país."
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -23,7 +23,7 @@ const siteURL = Astro.site?.toString() || 'https://lahebilleria.com.ar';
 <meta name="description" content={description} />
 
 <!-- SEO Keywords -->
-<meta name="keywords" content="bijouterie mayorista, accesorios por mayor, colitas mayorista, vinchas por mayor, hebillas mayorista, broches mayorista, argentina, proveedor bijouterie" />
+<meta name="keywords" content="accesorios cabello mayorista, accesorios pelo por mayor, colitas mayorista, vinchas por mayor, hebillas mayorista, argentina" />
 <meta name="author" content="La Hebillería" />
 
 <!-- Canonical URL -->

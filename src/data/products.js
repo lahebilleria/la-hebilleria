@@ -1,5 +1,5 @@
 // 🤖 Archivo generado automáticamente - NO EDITAR MANUALMENTE
-// Última actualización: 8/3/2026, 06:12:57
+// Última actualización: 21/3/2026, 08:51:53
 
 export const artesanal = [
   {
@@ -242,7 +242,7 @@ export const colitaslycra = [
     "title": "Colitas Lycra 4.5 Cm",
     "subtitle": "CL1320",
     "presentation": "Blister X 6 Unidades",
-    "price": "$300",
+    "price": "$1800",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769215574/Colitas1_rmgq2a.webp"
@@ -252,7 +252,7 @@ export const colitaslycra = [
     "title": "Colitas Lycra 5.5 Cm",
     "subtitle": "CL1321",
     "presentation": "Blister X 6 Unidades",
-    "price": "$400",
+    "price": "$2400",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769215575/Colitas2_czltmn.webp"
@@ -262,7 +262,7 @@ export const colitaslycra = [
     "title": "Colitas Lycra 6.5 Cm",
     "subtitle": "CL1322",
     "presentation": "Blister X 6 Unidades",
-    "price": "$500",
+    "price": "$3000",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769215575/Colitas3_ucpzx0.webp"
@@ -272,17 +272,17 @@ export const colitaslycra = [
     "title": "Colitas Lycra 5.5 Cm",
     "subtitle": "CL1323",
     "presentation": "Blister X 6 Unidades",
-    "price": "$400",
+    "price": "$2400",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769215575/Colitas5_sne7yt.webp"
     }
   },
   {
-    "title": "Colitas Lycra 4.5 Cm.",
+    "title": "Colitas Lycra 4.5 Cm",
     "subtitle": "CL1324",
     "presentation": "Blister X 6 Unidades",
-    "price": "$300",
+    "price": "$1800",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769215575/Colitas4_vax2s8.webp"
@@ -302,10 +302,10 @@ export const brochesplastico = [
     }
   },
   {
-    "title": "Broche Flor Mediano",
+    "title": "Broche Flor Mediano par",
     "subtitle": "BP1421",
-    "presentation": "Blister X Par",
-    "price": "$1800",
+    "presentation": "Paquete x 6 pares",
+    "price": "$10800",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1765704868/hebillas-6_nnhsq3.jpg"
@@ -315,7 +315,7 @@ export const brochesplastico = [
     "title": "Broche Clásico Grande",
     "subtitle": "BP1422",
     "presentation": "Paquete X 6 Unidades",
-    "price": "$1800",
+    "price": "$10800",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1765704868/hebillas-7_hv7gfg.jpg"
@@ -325,7 +325,7 @@ export const brochesplastico = [
     "title": "Broche Flor Pastel",
     "subtitle": "BP1423",
     "presentation": "Paquete X 6 Unidades",
-    "price": "$1800",
+    "price": "$10800",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769227120/Broche1_qdevgt.webp"
@@ -372,10 +372,10 @@ export const brochesplastico = [
     }
   },
   {
-    "title": "Broche Mediano Labubu",
+    "title": "Broche Mediano Labubu par",
     "subtitle": "BP1429",
-    "presentation": "Blister X Par",
-    "price": "$1600",
+    "presentation": "Paquete x 6 pares",
+    "price": "$9600",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770885211/1429_yhfmab.webp"
@@ -415,30 +415,30 @@ export const brochesplastico = [
 
 export const colitasinfantil = [
   {
-    "title": "Colitas Mix Personajes",
+    "title": "Colitas Mix Personajes 10 unidades",
     "subtitle": "Ci1620",
-    "presentation": "Blister X 10 Unidades",
-    "price": "$1600",
+    "presentation": "Paquete x 6 blister",
+    "price": "$9600",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1765788973/colitas-1_pjndnf.jpg"
     }
   },
   {
-    "title": "Colitas Mix Pastel",
+    "title": "Colitas Mix Pastel par",
     "subtitle": "Ci1621",
-    "presentation": "Blister X Par",
-    "price": "$1300",
+    "presentation": "Paquete x 6 pares",
+    "price": "$7800",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1765788974/colitas-3_nbkjmh.jpg"
     }
   },
   {
-    "title": "Colitas Mix Variadas",
+    "title": "Colitas Mix Variadas x 10 unidades",
     "subtitle": "Ci1622",
-    "presentation": "Blister X 10 Unidades",
-    "price": "$1600",
+    "presentation": "Paquete x 6 blister",
+    "price": "$9600",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1765788973/colitas-2_upmlaw.jpg"
@@ -465,30 +465,30 @@ export const colitasinfantil = [
     }
   },
   {
-    "title": "Colitas Personajes",
+    "title": "Colitas Personajes blister x 3 nidades",
     "subtitle": "Ci1625",
-    "presentation": "Blister X 3 Unidades",
-    "price": "$780",
+    "presentation": "Paquete x 6 blister",
+    "price": "$4680",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1765788973/colitas-6_asuqhx.jpg"
     }
   },
   {
-    "title": "Colita Infantil Stitch",
+    "title": "Colita Infantil Stitch blister x 3 unid.",
     "subtitle": "Ci1626",
-    "presentation": "Blister X 3 Unidades",
-    "price": "$780",
+    "presentation": "Paquete x 6 blister",
+    "price": "$4680",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770110828/Ci7730_ilcwyj.webp"
     }
   },
   {
-    "title": "Colita Infantil Labubu",
+    "title": "Colita Infantil Labubu blister x 3 unid.",
     "subtitle": "Ci1627",
-    "presentation": "Blister X 3 Unidades",
-    "price": "$780",
+    "presentation": "Paquete x 6 blister",
+    "price": "$4680",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770110829/Ci7735_rje4st.webp"
@@ -525,19 +525,19 @@ export const colitasinfantil = [
     }
   },
   {
-    "title": "Colita Infantil Flor Stitch",
+    "title": "Colita Infantil Flor Stitch blister indv.",
     "subtitle": "Ci1631",
-    "presentation": "Blister Individual",
-    "price": "$650",
+    "presentation": "Paquete x 6 blister",
+    "price": "$3900",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770110828/Ci7725a_ubbzrx.webp"
     }
   },
   {
-    "title": "Scrunchi Infantil Labubu",
+    "title": "Scrunchi Infantil Labubu blister indiv",
     "subtitle": "Ci1632",
-    "presentation": "Blister Individual",
+    "presentation": "Paquete x 6 blister",
     "price": "$750",
     "minOrder": "6 Blisters",
     "image": {
@@ -545,9 +545,9 @@ export const colitasinfantil = [
     }
   },
   {
-    "title": "Scrunchi Infantil Labubu",
+    "title": "Scrunchi Infantil Labubu blister indiv",
     "subtitle": "Ci1633",
-    "presentation": "Blister Individual",
+    "presentation": "Paquete x 6 blister",
     "price": "$750",
     "minOrder": "6 Blisters",
     "image": {
@@ -555,9 +555,9 @@ export const colitasinfantil = [
     }
   },
   {
-    "title": "Terminal De Trenza",
+    "title": "Terminal De Trenza bolsita",
     "subtitle": "Tt1634",
-    "presentation": "Paquete Individual",
+    "presentation": "Paquete x 12 bolsitas",
     "price": "$1800",
     "minOrder": "1 Paquete",
     "image": {
@@ -570,8 +570,8 @@ export const vinchasinfantil = [
   {
     "title": "Vincha Elastizada Con Adorno Bb",
     "subtitle": "Vi1720",
-    "presentation": "Blister Individual",
-    "price": "$1300",
+    "presentation": "Paquete X 3 Unidades",
+    "price": "$3900",
     "minOrder": "6 Blisters",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769214850/vincha3_igjafc.webp"
@@ -580,8 +580,8 @@ export const vinchasinfantil = [
   {
     "title": "Vincha Forrada Raso Con Adorno",
     "subtitle": "Vi1721",
-    "presentation": "Unidad",
-    "price": "$1200",
+    "presentation": "Paquete X 3 Unidades",
+    "price": "$3600",
     "minOrder": "3 Unidades",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769214851/vincha1_pqlidd.webp"
@@ -590,8 +590,8 @@ export const vinchasinfantil = [
   {
     "title": "Vincha Flor Elástica Con Adorno Bebe",
     "subtitle": "Vi1722",
-    "presentation": "Blister Individual",
-    "price": "$1300",
+    "presentation": "Paquete X 3 Unidades",
+    "price": "$3900",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769214850/vincha2_v3al6o.webp"
@@ -600,8 +600,8 @@ export const vinchasinfantil = [
   {
     "title": "Vincha Relieve X 4 Colores",
     "subtitle": "Vi1723",
-    "presentation": "Blister Individual",
-    "price": "$1900",
+    "presentation": "Paquete X 3 Unidades",
+    "price": "$5700",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769214851/vichas-3_vj7lo8.webp"
@@ -610,8 +610,8 @@ export const vinchasinfantil = [
   {
     "title": "Vincha Lisa X 4 Colores",
     "subtitle": "Vi1724",
-    "presentation": "Blister Individual",
-    "price": "$1800",
+    "presentation": "Paquete X 3 Unidades",
+    "price": "$5400",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769214851/vinchas-2_fyuex3.webp"
@@ -620,8 +620,8 @@ export const vinchasinfantil = [
   {
     "title": "Vincha Orejitas Perlas X 4 Modelos",
     "subtitle": "Vi1725",
-    "presentation": "Blister Individual",
-    "price": "$1300",
+    "presentation": "Paquete X 3 Unidades",
+    "price": "$3900",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1769214851/vinchas-1_nrhlin.webp"
@@ -638,40 +638,40 @@ export const vinchasinfantil = [
     }
   },
   {
-    "title": "Vincha Elastico Liso",
+    "title": "Vincha Elastico Liso blister x 6 unid.",
     "subtitle": "Vi1727",
-    "presentation": "Blister X 6 Unidades",
-    "price": "$1900",
+    "presentation": "Paquete x 3 blister",
+    "price": "$5700",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771718036/Vi1727_dmzipf.jpg"
     }
   },
   {
-    "title": "Vincha Lycra Ancha Colegial",
+    "title": "Vincha Lycra Ancha Colegial blister unid.",
     "subtitle": "Vi1728",
-    "presentation": "Blister Individual",
-    "price": "$1400",
+    "presentation": "Paquete x 6 blister",
+    "price": "$8400",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771718034/Vi1728_esf7ew.jpg"
     }
   },
   {
-    "title": "Vincha Con Formas Kuromi",
+    "title": "Vincha Con Formas Kuromi ",
     "subtitle": "Vi1729",
-    "presentation": "Unidad",
-    "price": "$1600",
+    "presentation": "Paquete x 3 blister",
+    "price": "$4800",
     "minOrder": "6 Unidades",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771718034/Vi1729_dkvsxx.jpg"
     }
   },
   {
-    "title": "Vincha Lycra Angosta Colegial",
+    "title": "Vincha Lycra Angosta Colegial blister ind.",
     "subtitle": "Vi1730",
-    "presentation": "Blister",
-    "price": "$1300",
+    "presentation": "Paquete X 6 Unidades",
+    "price": "$7800",
     "minOrder": "6 Unidades",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1772945993/vincha-angosta.webp"
@@ -681,7 +681,7 @@ export const vinchasinfantil = [
 
 export const hebillas = [
   {
-    "title": "Tic-Tac Pintada Estampada",
+    "title": "Tic-Tac Pintada Estampada blister x 12 u.",
     "subtitle": "Ti1820",
     "presentation": "Blister X 12 Unidades",
     "price": "$1900",
@@ -731,10 +731,10 @@ export const hebillas = [
     }
   },
   {
-    "title": "Tic-Tac Capibara",
+    "title": "Tic-Tac Capibara blister par",
     "subtitle": "Ti1825",
-    "presentation": "Blister X Par",
-    "price": "$750",
+    "presentation": "Paquete x 6 blister",
+    "price": "$4500",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771718229/Ti1825_ccaklk.jpg"
@@ -791,20 +791,20 @@ export const hebillas = [
     }
   },
   {
-    "title": "Invisible Abanico Carton",
+    "title": "Invisible Abanico Carton x 48",
     "subtitle": "Ic1829",
-    "presentation": "Carton individual",
-    "price": "$590",
+    "presentation": "Paquete x 3 cartones",
+    "price": "$1770",
     "minOrder": "6 Cartones",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771137071/Ic1829_you7kl.webp"
     }
   },
   {
-    "title": "Invisible Largo Negro Carton",
+    "title": "Invisible Largo Negro Carton x 36",
     "subtitle": "Ic1830",
-    "presentation": "Carton individual",
-    "price": "$900",
+    "presentation": "Paquete x 3 cartones",
+    "price": "$2700",
     "minOrder": "6 Cartones",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1771924660/Ic1830_qoxw4h.webp"
@@ -814,60 +814,60 @@ export const hebillas = [
 
 export const setinfantil = [
   {
-    "title": "Set Infantil Personajes",
+    "title": "Set Infantil Personajes blister mix",
     "subtitle": "Si1920",
-    "presentation": "Blister Mix",
-    "price": "$1300",
+    "presentation": "Paquete x 6 blister",
+    "price": "$7800",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770110832/Si3320_tepfou.webp"
     }
   },
   {
-    "title": "Set Infantil Picos Labubu",
+    "title": "Set Infantil Picos Labubu blister",
     "subtitle": "Si1921",
-    "presentation": "Blister Mix",
-    "price": "$1600",
+    "presentation": "Paquete x 6 blister",
+    "price": "$9600",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770110833/Si3325_lufhrn.webp"
     }
   },
   {
-    "title": "Set Infantil Labubu",
+    "title": "Set Infantil Labubu blister",
     "subtitle": "Si1922",
-    "presentation": "Blister Mix",
-    "price": "$1200",
+    "presentation": "Paquete x 6 blister",
+    "price": "$7200",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770885212/1922_c3jenc.webp"
     }
   },
   {
-    "title": "Set Infantil Capibara",
+    "title": "Set Infantil Capibara blister",
     "subtitle": "Si1923",
-    "presentation": "Blister Mix",
-    "price": "$1600",
+    "presentation": "Paquete x 6 blister",
+    "price": "$9600",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770885211/1923_taxlvs.webp"
     }
   },
   {
-    "title": "Set Infantil Picos",
+    "title": "Set Infantil Picos blister",
     "subtitle": "Si1925",
-    "presentation": "Blister Mix",
-    "price": "$1300",
+    "presentation": "Paquete x 6 blister",
+    "price": "$7800",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770885211/1925_tggthm.webp"
     }
   },
   {
-    "title": "Set Infanti Kuromi",
+    "title": "Set Infanti Kuromi blister",
     "subtitle": "Si1926",
-    "presentation": "Blister Mix",
-    "price": "$1600",
+    "presentation": "Paquete x 6 blister",
+    "price": "$9600",
     "minOrder": "6 Blisterss",
     "image": {
       "src": "https://res.cloudinary.com/doyw5hnxj/image/upload/v1770885212/1926_prqsob.webp"

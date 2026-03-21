@@ -49,13 +49,6 @@ export default function ProductSection({ title, products, id }) {
                 </p>
               )}
 
-              {/* Compra mínima */}
-              {product.minOrder && (
-                <p className="text-sm text-gray-700">
-                  <span className="font-bold">Compra mínima:</span> {product.minOrder}
-                </p>
-              )}
-
               {/* Precio */}
               <p className="text-lg font-bold text-orange-600 pt-2">
                 Precio: {product.price}
