@@ -179,14 +179,7 @@ const handleAddToCart = () => {
               </p>
             )}
 
-            {/* Compra mínima */}
-            {minOrder && (
-              <p className="text-sm text-gray-600">
-                <span className="font-semibold">Compra mínima:</span> {minOrder}
-              </p>
-            )}
-
-            {/* Precio unitario */}
+            {/* Precio */}
             <p className="text-lg font-bold text-orange-600">
               Precio: {price}
             </p>
